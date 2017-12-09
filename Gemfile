@@ -63,3 +63,11 @@ end
 gem 'simple_form'
 
 gem 'devise'
+
+# Adding video/image upload functionality
+gem 'carrierwave', '~> 1.0'
+
+# Adds figaro to the application
+gem "figaro"
+
+gem "fog-aws"
