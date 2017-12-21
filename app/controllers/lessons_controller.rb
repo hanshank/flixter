@@ -8,8 +8,8 @@ class LessonsController < ApplicationController
   private
 
   def require_authorized_for_current_course
-    if !current_user_enrolled_in?(@course)
-      redirect_to courses_path, alert: 'Enroll before you can access this page'
+    if !current_user.enrolled_in?(current_lesson.section.course)
+      redirect_to course_path(current_lesson.section.course), :alert => 'Enroll before you can access this page'
     end
   end
 
