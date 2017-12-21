@@ -69,7 +69,6 @@ gem 'carrierwave', '~> 1.0'
 
 # Adds figaro to the application
 gem "figaro"
-
 gem "fog-aws"
-
 gem "mini_magick"
+gem 'carrierwave-aws'

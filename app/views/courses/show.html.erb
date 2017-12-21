@@ -2,7 +2,7 @@
 
 <div class="booyah-box col-10 offset-1">
   <h1><%= @course.title %></h1>
-  <%= image_tag course.image, class: 'img-fluid' %>
+  <%= image_tag @course.image, class: 'img-fluid' %>
   <br />
   <div class="row">
     <div class="col-sm-4 col-12 text-center">
@@ -13,7 +13,7 @@
     <% if current_user && current_user == @course.user %>
       <br />
       <br />
-      <%= link_to 'Administer', new_instructor_course_path(@course), class: 'btn btn-danger btn-large' %>
+      <%= link_to 'Administer', instructor_course_path(@course), class: 'btn btn-danger btn-large' %>
     <% end %>
   </div>
 
