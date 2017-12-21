@@ -5,6 +5,7 @@
     <%= csrf_meta_tags %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link href="http://vjs.zencdn.net/6.4.0/video-js.css" rel="stylesheet">
   </head>
 
   <body>
@@ -18,7 +19,7 @@
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
           <ul class="navbar-nav mr-auto mt-2 mt-md-0">
             <li class="nav-item">
-              <%= link_to 'See All Courses', courses_path, class: 'nav-link' %> 
+              <%= link_to 'See All Courses', courses_path, class: 'nav-link' %>
             </li>
           </ul>
           <ul class="navbar-nav">
@@ -55,5 +56,8 @@
         <%= link_to 'Teach a Course', new_instructor_course_path %>
       </div>
     </div>
+
+    <script src="http://vjs.zencdn.net/6.4.0/video.js"></script>
+    <script src="http://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
   </body>
 </html>
