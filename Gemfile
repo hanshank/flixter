@@ -75,3 +75,5 @@ gem 'carrierwave-aws'
 
 # Adds Stripe credit card capability to page
 gem 'stripe'
+
+gem 'ranked-model'
