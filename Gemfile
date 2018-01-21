@@ -79,3 +79,6 @@ gem 'stripe'
 gem 'ranked-model'
 
 gem 'jquery-ui-rails'
+
+# Adding Font Awesome Icons
+gem "font-awesome-rails"
